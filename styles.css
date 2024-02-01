@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid-container {
+    display: grid;
+    margin: 20px;
+    /* disposicion de las columnas */
+    grid-template-columns: 200px 200px 200px;
+    grid-template-columns: 2fr 1fr 1fr;
+    /* separacion de las filas y columnas */
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 100px;
+    grid-gap: 20px;
+    /* tamaño de las filas autogeneradas */
+}
+
+.grid-container > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #cfe8dc;
+    border: 2px solid  #4fb9e3;
+}
+
